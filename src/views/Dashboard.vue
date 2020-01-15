@@ -378,6 +378,11 @@ export default {
             this.topVolunteer = null
             this.pieData.length = 0
             this.dollarAmount = 0
+            this.familyCount = 0
+            this.techCount = 0
+            this.environmentCount = 0
+            this.healthCount = 0
+            this.otherCount = 0
             this.loaded = false
         },
         countCatagories(arr) {

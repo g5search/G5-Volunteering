@@ -61,16 +61,12 @@
           </v-btn>
         </template>
         <v-list>
-          <a href="/add-hours">
-            <v-list-item>
+            <v-list-item to="/add-hours" link>
               <v-list-item-title>Submit Volunteer Hours</v-list-item-title>
             </v-list-item>
-          </a>
-          <a href="/dashboard">
-            <v-list-item>
+            <v-list-item to="/dashboard" link>
               <v-list-item-title>Dashboard</v-list-item-title>
             </v-list-item>
-          </a>
           <!-- <a href="/login">
           <v-list-item v-if="!loggedIn">
             <v-list-item-title>Login</v-list-item-title>

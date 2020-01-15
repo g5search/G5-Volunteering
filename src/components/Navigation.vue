@@ -119,6 +119,6 @@ export default {
     }
     a {
       text-decoration: none;
-      color: #333 !important;
+      color: rgb(255, 103, 103) !important;
     }
 </style>

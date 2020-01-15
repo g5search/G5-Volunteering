@@ -24,17 +24,11 @@ let router = new VueRouter({
     path: '/dashboard',
     name: 'dashboard',
     component: Dashboard,
-    meta: {
-      requiresAuth: true
-    }
   },
   {
     path: '/add-post',
     name: 'addPosts',
     component: AddPost,
-    meta: {
-      requiresAuth: true
-    }
   },
   {
     path: '/add-hours',
@@ -49,17 +43,17 @@ let router = new VueRouter({
 ]
 })
 
-router.beforeEach((to, from, next) => {
-  let currentUser = firebase.auth().currentUser
-  let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
+// router.beforeEach((to, from, next) => {
+//   let currentUser = firebase.auth().currentUser
+//   let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
 
-  if (requiresAuth && !currentUser) {
-    next('/home');
-  } else if (requiresAuth && currentUser) {
-    next();
-  } else {
-    next();
-  }
-})
+//   if (requiresAuth && !currentUser) {
+//     next('/home');
+//   } else if (requiresAuth && currentUser) {
+//     next();
+//   } else {
+//     next();
+//   }
+// })
 
 export default router;

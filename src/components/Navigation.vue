@@ -66,14 +66,19 @@
               <v-list-item-title>Submit Volunteer Hours</v-list-item-title>
             </v-list-item>
           </a>
-          <a href="/login">
+          <a href="/dashboard">
+            <v-list-item>
+              <v-list-item-title>Dashboard</v-list-item-title>
+            </v-list-item>
+          </a>
+          <!-- <a href="/login">
           <v-list-item v-if="!loggedIn">
             <v-list-item-title>Login</v-list-item-title>
           </v-list-item>
-          </a>
-          <v-list-item @click="logout" v-if="loggedIn">
+          </a> -->
+          <!-- <v-list-item @click="logout" v-if="loggedIn">
             <v-list-item-title>Logout</v-list-item-title>
-          </v-list-item>
+          </v-list-item> -->
         </v-list>
       </v-menu>
       <!-- <v-toolbar-items>

@@ -117,7 +117,7 @@ export default {
     }),
     created: function() {
         // get usernames for v-select options
-        fireDb.collection('users').get()
+        fireDb.collection('users').orderBy('Name').get()
         .then(snapshot => {
             if (snapshot.empty) {
             console.log('No matching documents.');

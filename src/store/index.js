@@ -32,7 +32,7 @@ export default new Vuex.Store({
           return;
           }  
           snapshot.forEach(doc => {
-              this.users.push((doc.id, '=>', doc.data().name))
+              this.users.push((doc.id, '=>', doc.data().Name))
           });
       })
       .catch(err => {
